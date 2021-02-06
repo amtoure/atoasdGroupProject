@@ -1,7 +1,7 @@
-## Spring Microservices in Action - Second Edition. Chapter 5
+## Spring Microservices - Ato advanced Software development
 
 # Introduction
-Welcome to Spring Microservices in Action, Chapter 5.  Chapter 5 introduces the Spring Cloud Config service and how you can use it managed the configuration of your microservices.  By the time you are done reading this chapter you will have built and/or deployed:
+Welcome to Spring Microservices  the Spring Cloud Config service and how you can use it managed the configuration of your microservices.  By the time you are done reading this chapter you will have built and/or deployed:
 
 1.  A Spring Cloud Config server that is deployed as Docker container and can manage a services configuration information using a file system/ classpath or GitHub-based repository.
 2.  A licensing service that will manage licensing data used within Ostock.
@@ -18,11 +18,11 @@ To clone and run this application, you'll need [Git](https://git-scm.com), [Mave
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/ihuaylupo/manning-smia
+$ git clone https://github.com/amtoure/atoasdGroupProject
 
 # Go into the repository, by chaning to the directory where you have downloaded the 
-# chapter 5 source code
-$ cd chapter5
+# 
+$ cd atoasdGroupProject
 
 # To build the code examples for Chapter 5 as a docker image, open a command-line 
 # window and execute the following command:
@@ -49,7 +49,7 @@ You can find the database script as well in the docker directory.
 
 ## Contact
 
-I'd like you to send me an email on <illaryhs@gmail.com> about anything you'd want to say about this software.
+I'd like you to send me an email on <atoadvancedsoft@gmail.com> about anything you'd want to say about this software.
 
 ### Contributing
 Feel free to file an issue if it doesn't work for your code sample. Thanks.
