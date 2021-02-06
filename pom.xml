@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.atoasd</groupId>
+  <version>0.0.1-SNAPSHOT</version>
+  <artifactId>atoasd-parent-pom</artifactId>
+  <packaging>pom</packaging>
+
+
+  <name>atoasd-parent-pom</name>
+  <description>Parent Pom for the atoasd project</description>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.2</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <properties>
+	 <docker.image.prefix>atoasd</docker.image.prefix>
+      <java.version>11</java.version>
+      <spring-cloud.version>2020.0.0</spring-cloud.version>
+	</properties>
+
+  <modules>
+    <module>configserver</module>
+    <module>eurekaserver</module>
+    <module>licensing-service</module>
+    <module>organization-service</module>
+  </modules>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.spotify</groupId>
+        <artifactId>dockerfile-maven-plugin</artifactId>
+        <version>1.4.13</version>
+        <configuration>
+             <skip>true</skip>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
