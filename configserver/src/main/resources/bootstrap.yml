@@ -17,6 +17,7 @@ spring:
           host: 127.0.0.1
           port: 8200
           kv-version: 2
+        bootstrap: true
 
 server:
   port: 8071
